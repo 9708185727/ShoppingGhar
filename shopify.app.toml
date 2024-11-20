@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d6ab4c52d0a4a58190d21c7962084c40"
+application_url = "https://campus-raleigh-ac-means.trycloudflare.com"
+embedded = true
+name = "shoppingghar"
+handle = "shoppingghar"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://campus-raleigh-ac-means.trycloudflare.com/auth/callback",
+  "https://campus-raleigh-ac-means.trycloudflare.com/auth/shopify/callback",
+  "https://campus-raleigh-ac-means.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "raman-tech.myshopify.com"
+automatically_update_urls_on_dev = true
